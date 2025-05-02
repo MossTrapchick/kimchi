@@ -6,17 +6,21 @@ using UnityEngine.UI;
 
 public class Attack : NetworkBehaviour
 {
+    [SerializeField] int Damage;
     [SerializeField] float AttackCooldown, WaitBeforeAttack;
     [SerializeField] Image CooldownUI;
-    [SerializeField] Movement enemy;
+    [SerializeField] HealthManager enemy;
     [SerializeField] Animator anim;
     Coroutine Cooldown;
     private void Start()
     {
+        if (NetworkManager.LocalClientId == OwnerClientId) CooldownUI = GameManager.Instance.GetAttackUI;
+        if (!IsOwner) return;
         InputManager.Input.Player.Attack.performed += startAttack;
     }
     private void OnDisable()
     {
+        if (!IsOwner) return;
         InputManager.Input.Player.Attack.performed -= startAttack;
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,10 +33,6 @@ public class Attack : NetworkBehaviour
     }
     void startAttack(InputAction.CallbackContext ctx)
     {
-        if (!IsOwner)
-        {
-            return;
-        }
         if (Cooldown == default)
         {
             StartCoroutine(attack());
@@ -47,7 +47,7 @@ public class Attack : NetworkBehaviour
         yield return new WaitForSeconds(WaitBeforeAttack);
         if (enemy != default)
         {
-            enemy.gameObject.SetActive(false);
+            enemy.TakeDamage(Damage);
             Debug.Log("enemy attacked");
         }
         else Debug.Log("miss");

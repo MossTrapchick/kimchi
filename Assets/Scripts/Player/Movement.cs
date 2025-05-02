@@ -67,6 +67,7 @@ public class Movement : NetworkBehaviour
     {
         if (isGrounded)
         {
+            anim.SetTrigger("Jump");
             rb.AddForce(Vector2.up * JumpForceMax,ForceMode2D.Impulse);
             IsJumping= true;
         }
@@ -83,13 +84,18 @@ public class Movement : NetworkBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
+            anim.SetBool("IsGrounded", true);
             isGrounded = true;
             IsJumping = false;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground")) isGrounded = false;
+        if (collision.collider.CompareTag("Ground"))
+        {
+            anim.SetBool("IsGrounded", false);
+            isGrounded = false;
+        }
     }
     private void OnDisable()
     {

@@ -348,7 +348,7 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   Damage: 5
   AttackCooldown: 2
-  WaitBeforeAttack: 0.6
+  WaitBeforeAttack: 0.4
   CooldownUI: {fileID: 0}
   enemy: {fileID: 0}
   anim: {fileID: 2122425081698857442}

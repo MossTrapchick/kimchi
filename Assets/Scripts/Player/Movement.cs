@@ -1,8 +1,9 @@
 using System.Collections;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement : MonoBehaviour
+public class Movement : NetworkBehaviour
 {
     [SerializeField] float Speed, JumpForceMax, JumpForceMin;
     [SerializeField][Range(0f, 1f)] float jumpBuffer;
@@ -14,8 +15,15 @@ public class Movement : MonoBehaviour
         InputManager.Input.Player.Jump.performed += startJumpWithBuffer;
         InputManager.Input.Player.Jump.canceled += CancelJump;
     }
+
+   
     private void FixedUpdate()
     {
+        if (!IsOwner)
+        {
+            return;
+        }
+
         if (InputManager.Input.Player.Move.IsPressed())
         {
             float direction = InputManager.Input.Player.Move.ReadValue<float>();
@@ -25,7 +33,11 @@ public class Movement : MonoBehaviour
     Coroutine jump;
     void startJumpWithBuffer(InputAction.CallbackContext ctx)
     {
-        if(jump!=default) StopCoroutine(jump);
+        if (!IsOwner)
+        {
+            return;
+        }
+        if (jump!=default) StopCoroutine(jump);
         jump = StartCoroutine(JumpWithBuffer(jumpBuffer));
     }
     IEnumerator JumpWithBuffer(float controlBuffer)
@@ -52,6 +64,10 @@ public class Movement : MonoBehaviour
     }
     void CancelJump(InputAction.CallbackContext ctx)
     {
+        if (!IsOwner)
+        {
+            return;
+        }
         if (IsJumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY / JumpForceMin);

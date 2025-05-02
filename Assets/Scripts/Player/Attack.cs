@@ -1,9 +1,10 @@
 using System.Collections;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class Attack : MonoBehaviour
+public class Attack : NetworkBehaviour
 {
     [SerializeField] float AttackCooldown, WaitBeforeAttack;
     [SerializeField] Image CooldownUI;
@@ -28,6 +29,10 @@ public class Attack : MonoBehaviour
     }
     void startAttack(InputAction.CallbackContext ctx)
     {
+        if (!IsOwner)
+        {
+            return;
+        }
         if (Cooldown == default)
         {
             StartCoroutine(attack());

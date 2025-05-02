@@ -4,13 +4,13 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Player", menuName = "ScriptableObject/player")]
 public class Players : ScriptableObject
 {
-    [SerializeField] int health;
-    [SerializeField] int basicDamage;
-    [SerializeField] int spechialDamage;
-    [SerializeField] int ultDamage;
+    [SerializeField] public int health;
+    [SerializeField] public int basicDamage;
+    [SerializeField] public int spechialDamage;
+    [SerializeField] public int ultDamage;
 
-    [SerializeField] Image Icon;
+    [SerializeField] public Image Icon;
 
-    [SerializeField] string name;
+    [SerializeField] public string name;
 
 }

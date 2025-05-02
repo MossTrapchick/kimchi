@@ -7,36 +7,45 @@ public class Movement : NetworkBehaviour
 {
     [SerializeField] float Speed, JumpForceMax, JumpForceMin;
     [SerializeField][Range(0f, 1f)] float jumpBuffer;
+    [SerializeField] Transform character;
+    [SerializeField] Animator anim;
     private bool isGrounded = false, IsJumping = false;
     Rigidbody2D rb;
     void Start()
     {
+        if (!IsOwner) return;
         rb = GetComponent<Rigidbody2D>();
+        InputManager.Input.Player.Move.performed += ChangeDirection;
         InputManager.Input.Player.Jump.performed += startJumpWithBuffer;
         InputManager.Input.Player.Jump.canceled += CancelJump;
     }
-
+    void ChangeDirection(InputAction.CallbackContext ctx)
+    {
+        float direction = InputManager.Input.Player.Move.ReadValue<float>();
+        DirRpc(direction < 0 ? -1 : 1, OwnerClientId);
+    }
+    [Rpc(SendTo.Everyone)]
+    void DirRpc(float x, ulong id)
+    {
+        if (id != OwnerClientId) return;
+        character.localScale = new Vector3(x, 1, 1);
+    }
    
     private void FixedUpdate()
     {
-        if (!IsOwner)
-        {
-            return;
-        }
+        if (!IsOwner) return;
 
         if (InputManager.Input.Player.Move.IsPressed())
         {
+            anim.SetBool("IsWalking", true);
             float direction = InputManager.Input.Player.Move.ReadValue<float>();
             rb.linearVelocity = new Vector2(direction * Time.fixedDeltaTime * Speed * 100f, rb.linearVelocityY);
         }
+        else anim.SetBool("IsWalking", false);
     }
     Coroutine jump;
     void startJumpWithBuffer(InputAction.CallbackContext ctx)
     {
-        if (!IsOwner)
-        {
-            return;
-        }
         if (jump!=default) StopCoroutine(jump);
         jump = StartCoroutine(JumpWithBuffer(jumpBuffer));
     }
@@ -64,10 +73,6 @@ public class Movement : NetworkBehaviour
     }
     void CancelJump(InputAction.CallbackContext ctx)
     {
-        if (!IsOwner)
-        {
-            return;
-        }
         if (IsJumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY / JumpForceMin);
@@ -88,6 +93,8 @@ public class Movement : NetworkBehaviour
     }
     private void OnDisable()
     {
+        if(!IsOwner) return;
+        InputManager.Input.Player.Move.performed -= ChangeDirection;
         InputManager.Input.Player.Jump.performed -= startJumpWithBuffer;
         InputManager.Input.Player.Jump.canceled -= CancelJump;
     }

@@ -25,11 +25,13 @@ public class Attack : NetworkBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.TryGetComponent(out enemy);
+        if (collision.TryGetComponent(out HealthManager health) && collision.transform != transform.parent.parent)
+            enemy = health;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out enemy)) enemy = default;
+        if (collision.TryGetComponent(out HealthManager health) && collision.transform != transform.parent.parent)
+            enemy = default;
     }
     void startAttack(InputAction.CallbackContext ctx)
     {

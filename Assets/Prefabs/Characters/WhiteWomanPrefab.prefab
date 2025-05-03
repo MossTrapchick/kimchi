@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4917568250166151303}
   - component: {fileID: 3837925587986778390}
   m_Layer: 0
-  m_Name: Test_Player
+  m_Name: WhiteWomanPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

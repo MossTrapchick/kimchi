@@ -6,14 +6,17 @@ using UnityEngine.UI;
 
 public class Attack : NetworkBehaviour
 {
-    [SerializeField] int Damage;
     [SerializeField] float AttackCooldown, WaitBeforeAttack;
-    [SerializeField] Image CooldownUI;
-    [SerializeField] HealthManager enemy;
     [SerializeField] Animator anim;
+    Character character;
+    int Damage;
+    Image CooldownUI;
+    HealthManager enemy;
     Coroutine Cooldown;
     private void Start()
     {
+        character = GameManager.Instance.MyCharacter(OwnerClientId);
+        Damage = character.basicDamage;
         if (NetworkManager.LocalClientId == OwnerClientId) CooldownUI = GameManager.Instance.GetAttackUI;
         if (!IsOwner) return;
         InputManager.Input.Player.Attack.performed += startAttack;

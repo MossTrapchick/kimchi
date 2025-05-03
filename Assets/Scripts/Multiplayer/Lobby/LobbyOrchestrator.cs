@@ -83,13 +83,15 @@ public class LobbyOrchestrator : NetworkBehaviour {
         public ulong id;
         public string Name;
         public bool IsReady;
-        public PlayerData(string name, bool isReady, ulong id) { Name = name; IsReady = isReady; this.id = id; }
+        public int CharacterId;
+        public PlayerData(string name, bool isReady, ulong id) { Name = name; IsReady = isReady; this.id = id; this.CharacterId = 0; }
 
         public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
         {
             serializer.SerializeValue(ref Name);
             serializer.SerializeValue(ref IsReady);
             serializer.SerializeValue(ref id);
+            serializer.SerializeValue(ref CharacterId);
         }
     }
 
@@ -188,7 +190,17 @@ public class LobbyOrchestrator : NetworkBehaviour {
         PropagateToClients();
         UpdateInterface();
     }
-
+    public void OnSelectCharacter(int id)
+    {
+        SetCharacterServerRpc(NetworkManager.Singleton.LocalClientId, id);
+    }
+    [ServerRpc(RequireOwnership = false)]
+    private void SetCharacterServerRpc(ulong playerId, int characterId)
+    {
+        var data = _playersInLobby[playerId];
+        data.CharacterId = characterId;
+        _playersInLobby[playerId] = data;
+    }
     private void UpdateInterface() {
         LobbyPlayersUpdated?.Invoke(_playersInLobby);
     }

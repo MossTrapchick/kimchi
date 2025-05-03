@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RoomScreen : MonoBehaviour {
+    [SerializeField] TMP_Dropdown CharacterDropDown;
     [SerializeField] private LobbyPlayerPanel _playerPanelPrefab;
     [SerializeField] private Transform _playerPanelParent;
     [SerializeField] private TMP_Text _waitingText, _passwordField;
@@ -25,6 +26,8 @@ public class RoomScreen : MonoBehaviour {
     private void OnEnable() {
         foreach (Transform child in _playerPanelParent) Destroy(child.gameObject);
         _playerPanels.Clear();
+        Character[] characters = Resources.LoadAll<Character>("Characters");
+        CharacterDropDown.options = characters.Select(character => new TMP_Dropdown.OptionData { text = character.Name}).ToList();
 
         LobbyOrchestrator.LobbyPlayersUpdated.AddListener(NetworkLobbyPlayersUpdated);
         MatchmakingService.CurrentLobbyRefreshed.AddListener(OnCurrentLobbyRefreshed);

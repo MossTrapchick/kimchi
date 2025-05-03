@@ -6,17 +6,16 @@ using Unity.Netcode;
 public class HealthManager : NetworkBehaviour
 {
     private int curentHealth;
-
-    [SerializeField] Players player;
-
-    [SerializeField] Slider mainSlider;
+    Character character;
+    Slider healthSlider;
 
     private void Start()
     {
-        mainSlider = GameManager.Instance.GetSlider(OwnerClientId);
-        curentHealth = player.health;
-        mainSlider.maxValue = player.health;
-        mainSlider.value = player.health;
+        healthSlider = GameManager.Instance.GetSlider(OwnerClientId);
+        character = GameManager.Instance.MyCharacter(OwnerClientId);
+        curentHealth = character.health;
+        healthSlider.maxValue = character.health;
+        healthSlider.value = character.health;
     }
 
     public void TakeDamage(int damage) => addDamageRpc(damage,OwnerClientId);
@@ -26,6 +25,6 @@ public class HealthManager : NetworkBehaviour
     {
         if (id != OwnerClientId) return;
         curentHealth -= damage;
-        mainSlider.value = curentHealth;
+        healthSlider.value = curentHealth;
     }
 }

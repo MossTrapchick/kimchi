@@ -13,9 +13,9 @@ public class SceneFader : MonoBehaviour
     private int _fadeAmount = Shader.PropertyToID("_Value");
 
     private int _useShutter = Shader.PropertyToID("_UseShutter");
-    private int _useRadialWipe = Shader.PropertyToID("_UseRadialWiper");
-    private int _usePlainBlack = Shader.PropertyToID("_usePlainBlack");
-    private int _useGoop = Shader.PropertyToID("_useGoop");
+    private int _useRadialWipe = Shader.PropertyToID("_useRadialWipe");
+    private int _usePlainBlack = Shader.PropertyToID("_UsePlainBlack");
+    private int _useGoop = Shader.PropertyToID("_UseGoop");
 
     private int? _lastEffect;
 

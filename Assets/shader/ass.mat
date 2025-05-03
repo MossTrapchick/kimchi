@@ -46,6 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
+    - _GoopScale: 10
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -53,10 +54,15 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
+    - _UseGoop: 0
+    - _UsePlainBlack: 1
     - _UseShutter: 1
-    - _Value: 1
+    - _Value: 0
     - _numberSutter: 10
+    - _useRadialWipe: 0
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
+    - _GoopScrollSpeed: {r: 0.25, g: 0, b: 0, a: 0}
+    - _GoopTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

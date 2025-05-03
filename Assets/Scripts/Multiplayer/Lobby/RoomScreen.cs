@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RoomScreen : MonoBehaviour {
+    [SerializeField] string WaitingPlayers, WaitingReady, WaitingStart;
     [SerializeField] TMP_Dropdown CharacterDropDown;
     [SerializeField] private LobbyPlayerPanel _playerPanelPrefab;
     [SerializeField] private Transform _playerPanelParent;
@@ -74,7 +75,7 @@ public class RoomScreen : MonoBehaviour {
 
     private void OnCurrentLobbyRefreshed(Lobby lobby) {
         lobbyId = lobby.Id;
-        _waitingText.text = (lobby.Players.Count < 2) ? $"Waiting second player" : (allReady) ? "Waiting for start" : "Waiting for ready";
+        _waitingText.text = (lobby.Players.Count < 2) ? WaitingPlayers : (allReady) ? $"{WaitingStart} {_startingTime} секунды" : WaitingReady;
         string password = lobby.Data[Constants.PasswordKey].Value;
         _passwordField.gameObject.SetActive(password != "");
         _passwordField.text = $"Password: {password}";

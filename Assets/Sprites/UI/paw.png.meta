@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ee1ca96426215054fac32023d10c9093
+guid: b000e99c62c43d74a802df7027b33944
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3073004111582470070
-    second: lines_0
+      213: -6215915644911070973
+    second: paw_0
+  - first:
+      213: 7356374613569537633
+    second: paw_1
+  - first:
+      213: 6840396707838988450
+    second: paw_2
+  - first:
+      213: 988696588890167655
+    second: paw_3
+  - first:
+      213: -8118150083602628277
+    second: paw_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +58,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -96,30 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lines_0
+      name: paw_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 219
+        y: 407
+        width: 170
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bf103045f085aa20800000000000000
-      internalID: 3073004111582470070
+      spriteID: 301584f77a1acb9a0800000000000000
+      internalID: -6215915644911070973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paw_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 552
+        width: 165
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166838c3cb7171660800000000000000
+      internalID: 7356374613569537633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paw_2
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 545
+        width: 170
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a09e755098fdee50800000000000000
+      internalID: 6840396707838988450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paw_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 368
+        width: 171
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769507b2f4e88bd00800000000000000
+      internalID: 988696588890167655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paw_4
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 196
+        width: 399
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41ce81c289865f80800000000000000
+      internalID: -8118150083602628277
       vertices: []
       indices: 
       edges: []
@@ -138,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lines_0: 3073004111582470070
+      paw_0: -6215915644911070973
+      paw_1: 7356374613569537633
+      paw_2: 6840396707838988450
+      paw_3: 988696588890167655
+      paw_4: -8118150083602628277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

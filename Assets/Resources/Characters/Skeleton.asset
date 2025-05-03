@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Skeleton
   m_EditorClassIdentifier: 
   Name: "\u041A\u043E\u0449\u0435\u0439"
-  prefab: {fileID: 1575401708305018006, guid: 42b4a3b67418766478124cfcc457744a, type: 3}
-  health: 100
-  basicDamage: 6
+  prefab: {fileID: 4376193145528260739, guid: 42b4a3b67418766478124cfcc457744a, type: 3}
+  health: 80
+  basicDamage: 4
   spechialDamage: 8
-  ultDamage: 20
+  ultDamage: 0
   Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

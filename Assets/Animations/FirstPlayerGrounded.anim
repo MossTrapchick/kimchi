@@ -18,6 +18,56 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0.2
+        value: {x: 0, y: 0, z: 60.638}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0, y: 0, z: 90.821}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2
+        value: {x: 0, y: 0, z: 18.126}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0, y: 0, z: -13.562}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
         time: 0
         value: {x: 0, y: 0, z: -87.002}
         inSlope: {x: 0, y: 0, z: 0}
@@ -47,7 +97,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -81,7 +131,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -115,7 +165,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -149,57 +199,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: {x: 0, y: 0, z: 60.638}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.5
-        value: {x: 0, y: 0, z: 90.821}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: {x: 0, y: 0, z: 18.126}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.5
-        value: {x: 0, y: 0, z: -13.562}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -251,7 +251,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -303,7 +303,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -337,7 +337,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -371,7 +371,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -405,7 +405,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -461,7 +461,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 485296460
+      path: 4227911546
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -470,7 +470,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1879600714
+      path: 2255708665
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -479,7 +479,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1611415401
+      path: 2579501141
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -488,7 +488,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1717650015
+      path: 3553257740
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -497,7 +497,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2305792604
+      path: 563557330
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -506,7 +506,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1308633844
+      path: 1373089221
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -515,7 +515,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 956766818
+      path: 3113919825
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -524,7 +524,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 4217683762
+      path: 2582618827
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -533,7 +533,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3737073509
+      path: 294368288
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -542,7 +542,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 636979909
+      path: 1526854914
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -551,7 +551,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1710267122
+      path: 3480736068
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -703,6 +703,186 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0.2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2
+        value: 60.638
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 90.821
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2
+        value: 18.126
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: -13.562
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
         time: 0
         value: 0
         inSlope: 0
@@ -733,10 +913,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -772,10 +952,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -811,10 +991,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -850,10 +1030,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -889,10 +1069,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -928,10 +1108,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -967,10 +1147,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1006,10 +1186,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1045,10 +1225,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1084,10 +1264,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1123,10 +1303,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1162,190 +1342,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
     classID: 4
     script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: 60.638
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 90.821
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.2
-        value: 18.126
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: -13.562
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1399,10 +1399,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1456,10 +1456,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1513,10 +1513,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1570,10 +1570,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1627,10 +1627,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1684,10 +1684,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1723,10 +1723,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1762,10 +1762,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1801,10 +1801,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1840,10 +1840,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1879,10 +1879,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1918,10 +1918,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1957,10 +1957,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -1996,10 +1996,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -2035,10 +2035,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   m_EulerEditorCurves:
   - serializedVersion: 2
     curve:
@@ -2048,7 +2048,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2060,7 +2060,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2072,7 +2072,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7/bone_8"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2084,7 +2084,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2096,7 +2096,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2108,7 +2108,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/LeftArm/LeftHand"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2120,7 +2120,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2132,7 +2132,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2144,7 +2144,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2156,7 +2156,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2168,7 +2168,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2180,7 +2180,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/Head"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2192,7 +2192,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2204,7 +2204,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2216,7 +2216,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_12/bone_13"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2228,7 +2228,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2240,7 +2240,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2252,7 +2252,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/RightLeg/RightFoot"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2264,7 +2264,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2276,7 +2276,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2288,7 +2288,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_3/bone_4"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2300,7 +2300,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2312,7 +2312,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2324,7 +2324,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2336,7 +2336,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2348,7 +2348,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2360,7 +2360,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_6"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2372,7 +2372,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2384,7 +2384,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2396,7 +2396,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_7"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/LeftLeg/LeftFoot"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2408,7 +2408,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2420,7 +2420,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2432,7 +2432,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/bone_5/bone_9/bone_10/bone_11"
+    path: "\u0411\u0435\u043B\u043E\u0441\u043D\u0435\u0436\u043A\u0430 1/Body/RightArm/RightHand/Sword"
     classID: 4
     script: {fileID: 0}
     flags: 0

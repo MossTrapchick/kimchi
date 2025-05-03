@@ -219,7 +219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  playerPref: {fileID: 1575401708305018006, guid: 98bf984fa7a9fca45bb347fedb148037, type: 3}
   MyHealth: {fileID: 801008389}
   EnemyHealth: {fileID: 680968206}
   MyImage: {fileID: 801008390}

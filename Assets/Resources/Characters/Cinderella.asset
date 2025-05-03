@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Cinderella
   m_EditorClassIdentifier: 
   Name: "\u0417\u043E\u043B\u0443\u0448\u043A\u0430"
-  prefab: {fileID: 1575401708305018006, guid: 98bf984fa7a9fca45bb347fedb148037, type: 3}
+  prefab: {fileID: 1575401708305018006, guid: 5cca22b2a16c63644aaedb9231165f79, type: 3}
   health: 100
   basicDamage: 5
   spechialDamage: 10
   ultDamage: 15
-  Icon: {fileID: -6147721454062478352, guid: 86d236f3adf9f5745bac4d109be12b7d, type: 3}
+  Icon: {fileID: 223128343190330288, guid: b95d0273a4877124da224d31170b8a81, type: 3}

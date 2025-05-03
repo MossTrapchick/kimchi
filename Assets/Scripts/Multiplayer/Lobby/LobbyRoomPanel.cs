@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class LobbyRoomPanel : MonoBehaviour {
+    [SerializeField] private AudioClip CorrectPass, ErrorPass;
     [SerializeField] private TMP_Text _nameText, _text;
     [SerializeField] private Transform _lock;
     [SerializeField] private TMP_InputField _passwordInput;
@@ -38,9 +39,14 @@ public class LobbyRoomPanel : MonoBehaviour {
         if (Lobby.Data[Constants.PasswordKey].Value == value)
         {
             StartCoroutine(SetColor(Color.green, 0.5f));
+            SoundPlayer.Play.Invoke(CorrectPass);
             join();
         }
-        else if (value.Length == 4) StartCoroutine(SetColor(Color.red, 0.5f));
+        else if (value.Length == 4)
+        {
+            SoundPlayer.Play.Invoke(ErrorPass);
+            StartCoroutine(SetColor(Color.red, 0.5f));
+        }
     }
     private void join()
     {
@@ -52,5 +58,9 @@ public class LobbyRoomPanel : MonoBehaviour {
         _text.color = color;
         yield return new WaitForSeconds(time);
         _text.color = Color.white;
+    }
+    public void PlaySound(AudioClip sound)
+    {
+        SoundPlayer.Play.Invoke(sound);
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6207572067215145487}
   - component: {fileID: 6861417697277050465}
   - component: {fileID: 2827813802232509533}
+  - component: {fileID: 8606614464509630332}
   m_Layer: 5
   m_Name: Room
   m_TagString: Untagged
@@ -54,6 +55,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b5fb62410923245ae8a61400bfdcd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CorrectPass: {fileID: 8300000, guid: f55d43babe78a7046b4fe67fb31f49f1, type: 3}
+  ErrorPass: {fileID: 8300000, guid: bab4ad9159cbcbf49a1af8898303033f, type: 3}
   _nameText: {fileID: 6410251308804137776}
   _text: {fileID: 3080763394669781740}
   _lock: {fileID: 9106898273420566498}
@@ -152,6 +155,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8606614464509630332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598522924178330682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c82a1470f36602438a834069b21e13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDown:
+    m_PersistentCalls:
+      m_Calls: []
+  sound: {fileID: 8300000, guid: db99a89326e2f9d4a97f23fdaedb9f48, type: 3}
 --- !u!1 &1189190071269813987
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +643,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3657018333775099562}
+        m_TargetAssemblyTypeName: LobbyRoomPanel, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 382368178bac2a84487be6dfd1b968ff, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

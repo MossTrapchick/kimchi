@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6156e5bc858f69240be3afd58201ba0e, type: 3}
+  m_Name: Cinderella
+  m_EditorClassIdentifier: 
+  Name: "\u0417\u043E\u043B\u0443\u0448\u043A\u0430"
+  prefab: {fileID: 1575401708305018006, guid: 98bf984fa7a9fca45bb347fedb148037, type: 3}
+  health: 100
+  basicDamage: 5
+  spechialDamage: 10
+  ultDamage: 15
+  Icon: {fileID: -6147721454062478352, guid: 86d236f3adf9f5745bac4d109be12b7d, type: 3}

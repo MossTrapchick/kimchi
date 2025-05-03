@@ -18,4 +18,4 @@ MonoBehaviour:
   basicDamage: 4
   spechialDamage: 8
   ultDamage: 0
-  Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  Icon: {fileID: 2180559228400502048, guid: ad3811ff0478ee64882a5e57f6d4b823, type: 3}

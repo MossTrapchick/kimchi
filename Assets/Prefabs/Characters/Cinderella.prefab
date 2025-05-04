@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  DeathSound: {fileID: 0}
+  DeathSound: {fileID: 8300000, guid: f4cfd76ea669d5b41b16a04461560461, type: 3}
 --- !u!1 &3661174167596483496
 GameObject:
   m_ObjectHideFlags: 0

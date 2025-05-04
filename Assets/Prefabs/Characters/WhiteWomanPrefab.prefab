@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  DeathSound: {fileID: 0}
+  DeathSound: {fileID: 8300000, guid: bf0882ea6138c054891e595ef3338235, type: 3}
 --- !u!95 &4468820493553887377
 Animator:
   serializedVersion: 7

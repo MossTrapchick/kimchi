@@ -54,7 +54,7 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _UseGoop: 1
+    - _UseGoop: 0
     - _UsePlainBlack: 1
     - _UseShutter: 0
     - _Value: 0

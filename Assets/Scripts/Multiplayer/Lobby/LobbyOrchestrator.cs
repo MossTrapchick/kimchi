@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using TMPro;
 using Unity.Netcode;
 using Unity.Services.Lobbies;
@@ -16,6 +17,7 @@ using UnityEngine.SceneManagement;
 ///     but the transport and RPC logic remains here. It's possible we could pull
 /// </summary>
 public class LobbyOrchestrator : NetworkBehaviour {
+    [SerializeField] private SceneFader fader;
     [SerializeField] private MainLobbyScreen _mainLobbyScreen;
     [SerializeField] private CreateLobbyScreen _createScreen;
     [SerializeField] private RoomScreen _roomScreen;
@@ -29,7 +31,7 @@ public class LobbyOrchestrator : NetworkBehaviour {
         CreateLobbyScreen.LobbyCreated.AddListener(CreateLobby);
         LobbyRoomPanel.LobbySelected.AddListener(OnLobbySelected);
         RoomScreen.LobbyLeft.AddListener(OnLobbyLeft);
-        RoomScreen.StartPressed.AddListener(OnGameStart);
+        RoomScreen.StartPressed.AddListener(test);
         
         NetworkObject.DestroyWithScene = true;
     }
@@ -219,7 +221,7 @@ public class LobbyOrchestrator : NetworkBehaviour {
         CreateLobbyScreen.LobbyCreated.RemoveListener(CreateLobby);
         LobbyRoomPanel.LobbySelected.RemoveListener(OnLobbySelected);
         RoomScreen.LobbyLeft.RemoveListener(OnLobbyLeft);
-        RoomScreen.StartPressed.RemoveListener(OnGameStart);
+        RoomScreen.StartPressed.RemoveListener(test);
         
         // We only care about this during lobby
         if (NetworkManager.Singleton != null) {
@@ -227,18 +229,18 @@ public class LobbyOrchestrator : NetworkBehaviour {
         }
       
     }
-    
-    private async void OnGameStart(string lobbyId) {
+    private async void test(string lobbyid) => await OnGameStart(lobbyid);
+    private async Task OnGameStart(string lobbyId) {
         await MatchmakingService.LockLobby();
 
-        //Lobby currentLobby = await LobbyService.Instance.GetLobbyAsync(lobbyId);
-
         StartGameClientRpc(_playersInLobby.Values.ToArray());
+        await Task.Delay((int)(fader.FadeDuration * 1000));
         NetworkManager.Singleton.SceneManager.LoadScene("ONLINE", LoadSceneMode.Single);
     }
     [ClientRpc]
     private void StartGameClientRpc(PlayerData[] players)
     {
+        fader.FadeOut(SceneFader.FadeType.PlainBlack);
         PlayersInCurrentLobby = players.ToList();
     }
     public static List<PlayerData> PlayersInCurrentLobby { get; private set; }

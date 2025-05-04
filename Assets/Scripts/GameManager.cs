@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : NetworkBehaviour
 {
+    [SerializeField] SceneFader fader;
     [SerializeField] GameObject GameOverWindow;
     [SerializeField] Slider LeftHealth, RightHealth;
     [SerializeField] Image LeftImage, RightImage;
@@ -32,6 +33,7 @@ public class GameManager : NetworkBehaviour
     }
     private void Start()
     {
+        fader.FAdeIn(SceneFader.FadeType.PlainBlack);
         LeftImage.sprite = Characters[LobbyOrchestrator.PlayersInCurrentLobby[0].CharacterId].Icon;
         RightImage.sprite = Characters[LobbyOrchestrator.PlayersInCurrentLobby[1].CharacterId].Icon;
         LeftName.text = LobbyOrchestrator.PlayersInCurrentLobby[0].Name;

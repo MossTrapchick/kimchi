@@ -55,7 +55,7 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     - _UseGoop: 1
-    - _UsePlainBlack: 0
+    - _UsePlainBlack: 1
     - _UseShutter: 0
     - _Value: 0
     - _numberSutter: 10

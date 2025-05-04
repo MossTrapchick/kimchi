@@ -1,5 +1,7 @@
 using TMPro;
+using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -22,5 +24,16 @@ public class MenuController : MonoBehaviour
     public void SavePlayerName(string name)
     {
         PlayerPrefs.SetString("Name", name);
+    }
+
+    public void SceneChanger(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
+
+    public async void CloseServer()
+    {
+        NetworkManager.Singleton.Shutdown();
+        await MatchmakingService.LeaveLobby();
     }
 }

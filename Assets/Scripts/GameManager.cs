@@ -10,7 +10,7 @@ public class GameManager : NetworkBehaviour
     [SerializeField] GameObject GameOverWindow;
     [SerializeField] Slider LeftHealth, RightHealth;
     [SerializeField] Image LeftImage, RightImage;
-    [SerializeField] TMP_Text LeftName, RightName;
+    [SerializeField] TMP_Text LeftName, RightName,WinsPlayer;
     [SerializeField] Image AttackUI, UltUI;
 
     [SerializeField] Transform player_1, player_2;
@@ -53,5 +53,17 @@ public class GameManager : NetworkBehaviour
     {
         InputManager.Input.Disable();
         GameOverWindow.SetActive(true);
+        if (LeftHealth.value <= 0)
+        {
+            WinsPlayer.text = LobbyOrchestrator.PlayersInCurrentLobby[1].Name;
+        }
+        else if (RightHealth.value <= 0)
+        {
+            WinsPlayer.text = LobbyOrchestrator.PlayersInCurrentLobby[0].Name;
+        }
+        else
+        {
+            WinsPlayer.text = "Никто не";
+        }
     }
 }

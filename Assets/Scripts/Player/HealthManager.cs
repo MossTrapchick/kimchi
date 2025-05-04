@@ -45,6 +45,8 @@ public class HealthManager : NetworkBehaviour
             anim.SetBool("IsDeath", true);
             curentHealth = character.health / 2;
             healthSlider.value = curentHealth;
+            dead = true;
+            Debug.Log("dwad");
         }
         else
         {

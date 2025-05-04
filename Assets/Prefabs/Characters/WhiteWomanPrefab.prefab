@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  DeathSound: {fileID: 0}
 --- !u!95 &4468820493553887377
 Animator:
   serializedVersion: 7
@@ -577,8 +578,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.06136694, g: 0.14438894, b: 0.83396226, a: 0.39215687}
-      key1: {r: 0.84245896, g: 0.13189735, b: 0.93207544, a: 0.006920427}
+      key0: {r: 0.6862745, g: 0.14201523, b: 0, a: 1}
+      key1: {r: 0.83396226, g: 0.44902986, b: 0.14318973, a: 0.5019608}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -594,7 +595,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 64379
+      atime1: 65535
       atime2: 65535
       atime3: 0
       atime4: 0
@@ -604,7 +605,7 @@ TrailRenderer:
       m_Mode: 0
       m_ColorSpace: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 3
+      m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 1
@@ -797,7 +798,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9056699350940791997, guid: a9dfab8b1a624304b9b57a55e4838ad4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97521853
+      value: 0.938257
       objectReference: {fileID: 0}
     - target: {fileID: -9056699350940791997, guid: a9dfab8b1a624304b9b57a55e4838ad4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -809,11 +810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -9056699350940791997, guid: a9dfab8b1a624304b9b57a55e4838ad4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.22124375
+      value: 0.34593928
       objectReference: {fileID: 0}
     - target: {fileID: -9056699350940791997, guid: a9dfab8b1a624304b9b57a55e4838ad4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -694.436
+      value: -1399.522
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: a9dfab8b1a624304b9b57a55e4838ad4, type: 3}
       propertyPath: m_Name

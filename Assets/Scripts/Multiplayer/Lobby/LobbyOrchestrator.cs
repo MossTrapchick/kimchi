@@ -200,6 +200,8 @@ public class LobbyOrchestrator : NetworkBehaviour {
         var data = _playersInLobby[playerId];
         data.CharacterId = characterId;
         _playersInLobby[playerId] = data;
+        PropagateToClients();
+        UpdateInterface();
     }
     private void UpdateInterface() {
         LobbyPlayersUpdated?.Invoke(_playersInLobby);

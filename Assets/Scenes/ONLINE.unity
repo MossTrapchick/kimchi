@@ -1480,6 +1480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  DeathSound: {fileID: 0}
 --- !u!114 &967653481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,7 +2115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1439839245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3711,6 +3712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  DeathSound: {fileID: 0}
 --- !u!224 &5664705882341571127
 RectTransform:
   m_ObjectHideFlags: 0

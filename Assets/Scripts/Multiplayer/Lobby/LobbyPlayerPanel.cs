@@ -1,7 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LobbyPlayerPanel : MonoBehaviour {
+    [SerializeField] private Image icon;
     [SerializeField] private TMP_Text _nameText, _statusText;
     [SerializeField] private string ready, notReady;
 
@@ -16,4 +18,5 @@ public class LobbyPlayerPanel : MonoBehaviour {
         _statusText.text = (isReady) ? ready : notReady;
         _statusText.color = (isReady) ? Color.green : Color.red;
     }
+    public void SetIcon(Sprite icon) => this.icon.sprite = icon;
 }

@@ -5,6 +5,7 @@ using Unity.Netcode;
 
 public class HealthManager : NetworkBehaviour
 {
+    [SerializeField] AudioClip DeathSound;
     private int curentHealth;
     Character character;
     Slider healthSlider;
@@ -32,6 +33,7 @@ public class HealthManager : NetworkBehaviour
     IEnumerator Death()
     {
         if (IsOwner) InputManager.Input.Disable();
+        SoundPlayer.Play.Invoke(DeathSound);
         GetComponent<Rigidbody2D>().gravityScale = 0;
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Animator>().SetTrigger("Death");

@@ -19,12 +19,15 @@ public class RoomScreen : MonoBehaviour {
     [SerializeField] private float _startingTime = 3f;
     private bool isReady = false, allReady = false;
     private string lobbyId;
+    Character[] Characters;
 
     private readonly List<LobbyPlayerPanel> _playerPanels = new();
 
     public static UnityEvent<string> StartPressed = new(); 
 
-    private void OnEnable() {
+    private void OnEnable()
+    {
+        Characters = Resources.LoadAll<Character>("Characters");
         foreach (Transform child in _playerPanelParent) Destroy(child.gameObject);
         _playerPanels.Clear();
         Character[] characters = Resources.LoadAll<Character>("Characters");
@@ -59,6 +62,7 @@ public class RoomScreen : MonoBehaviour {
             var currentPanel = _playerPanels.FirstOrDefault(p => p.PlayerId == player.Key);
             if (currentPanel != null) {
                 currentPanel.SetReady(player.Value.IsReady);
+                currentPanel.SetIcon(Characters[player.Value.CharacterId].Icon);
             }
             else {
                 var panel = Instantiate(_playerPanelPrefab, _playerPanelParent);

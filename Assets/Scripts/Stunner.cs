@@ -42,6 +42,7 @@ public class Stunner : NetworkBehaviour
         rb.gravityScale = 0;
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0;
+        GetComponent<Collider2D>().enabled = false;
         particles.Play();
         spriter.enabled = false;
         if(IsServer) Destroy(gameObject, 1f);

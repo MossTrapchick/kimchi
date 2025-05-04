@@ -19,7 +19,7 @@ public class Ult : NetworkBehaviour
         character = GameManager.Instance.MyCharacter(OwnerClientId);
         if (!IsOwner) return;
         CooldownUI = GameManager.Instance.GetUltUI;
-        CooldownUI.gameObject.SetActive(true);
+        CooldownUI.transform.parent.gameObject.SetActive(true);
         InputManager.Input.Player.Ultimate.performed += DoUlt;
     }
     void DoUlt(InputAction.CallbackContext ctx)
@@ -41,6 +41,7 @@ public class Ult : NetworkBehaviour
     {
         anim.SetTrigger("Ult");
         yield return new WaitForSeconds(WaitBeforeAttack);
+        if (anim.GetBool("IsStaned")) yield break;
         if (IsServer)
         {
             GameObject obj = Instantiate(apple, spawnPos.position, Quaternion.identity);

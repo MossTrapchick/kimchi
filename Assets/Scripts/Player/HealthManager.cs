@@ -9,9 +9,12 @@ public class HealthManager : NetworkBehaviour
     private int curentHealth;
     Character character;
     Slider healthSlider;
+    bool dead = false;
+    Animator anim;
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         healthSlider = GameManager.Instance.GetSlider(OwnerClientId);
         if (IsOwner) healthSlider.transform.GetChild(0).GetComponent<Image>().color = Color.green;
         character = GameManager.Instance.MyCharacter(OwnerClientId);
@@ -33,12 +36,26 @@ public class HealthManager : NetworkBehaviour
     IEnumerator Death()
     {
         if (IsOwner) InputManager.Input.Disable();
+        anim.SetTrigger("Death");
         SoundPlayer.Play.Invoke(DeathSound);
-        GetComponent<Rigidbody2D>().gravityScale = 0;
-        GetComponent<Collider2D>().enabled = false;
-        GetComponent<Animator>().SetTrigger("Death");
-        yield return new WaitForSeconds(10);
-        if (IsOwner) GameManager.OnGameOver.Invoke(false);
-        else GameManager.OnGameOver.Invoke(true);
+        if (character.name == "Skeleton" && !dead)
+        {
+            yield return new WaitForSeconds(4);
+            if (IsOwner) InputManager.Input.Enable();
+            anim.SetBool("IsDeath", true);
+            curentHealth = character.health / 2;
+            healthSlider.value = curentHealth;
+        }
+        else
+        {
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            rb.gravityScale = 0;
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0;
+            GetComponent<Collider2D>().enabled = false;
+            yield return new WaitForSeconds(10);
+            if (IsOwner) GameManager.OnGameOver.Invoke(false);
+            else GameManager.OnGameOver.Invoke(true);
+        }
     }
 }

@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  DeathSound: {fileID: 8300000, guid: 03c581edce76b504e94b59aecd7a5ec3, type: 3}
 --- !u!1001 &292806511418969672
 PrefabInstance:
   m_ObjectHideFlags: 0

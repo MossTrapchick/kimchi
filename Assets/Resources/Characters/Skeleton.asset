@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: "\u041A\u043E\u0449\u0435\u0439"
   prefab: {fileID: 4376193145528260739, guid: 42b4a3b67418766478124cfcc457744a, type: 3}
   health: 80
-  basicDamage: 4
+  basicDamage: 12
   spechialDamage: 8
   ultDamage: 0
   Icon: {fileID: 2180559228400502048, guid: ad3811ff0478ee64882a5e57f6d4b823, type: 3}

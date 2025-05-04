@@ -10,4 +10,5 @@ public class Character : ScriptableObject
     [SerializeField] public int spechialDamage;
     [SerializeField] public int ultDamage;
     [SerializeField] public Sprite Icon;
+    [SerializeField] public float stunTime;
 }

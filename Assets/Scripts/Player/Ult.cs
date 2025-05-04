@@ -47,7 +47,9 @@ public class Ult : NetworkBehaviour
             GameObject obj = Instantiate(apple, spawnPos.position, Quaternion.identity);
             obj.transform.localScale = transform.GetChild(0).localScale;
             obj.GetComponent<NetworkObject>().SpawnWithOwnership(owner);
-            obj.GetComponent<Stunner>().Damage = character.ultDamage;
+            Stunner stun = obj.GetComponent<Stunner>();
+            stun.Damage = character.ultDamage;
+            stun.stunTime = character.stunTime;
         }
     }
     private void OnDisable()

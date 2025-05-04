@@ -19,3 +19,4 @@ MonoBehaviour:
   spechialDamage: 10
   ultDamage: 15
   Icon: {fileID: -6204330402460442586, guid: dbf35b5adca88f046a6867dc09217b47, type: 3}
+  stunTime: 4

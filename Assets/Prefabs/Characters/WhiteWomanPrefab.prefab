@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   Speed: 3
-  JumpForceMax: 20
+  JumpForceMax: 30
   JumpForceMin: 2
   jumpBuffer: 0.1
   character: {fileID: 6650534407748372027}

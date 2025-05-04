@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6156e5bc858f69240be3afd58201ba0e, type: 3}
-  m_Name: Cinderella
+  m_Name: Yaga
   m_EditorClassIdentifier: 
-  Name: "\u0417\u043E\u043B\u0443\u0448\u043A\u0430"
-  prefab: {fileID: 1575401708305018006, guid: 5cca22b2a16c63644aaedb9231165f79, type: 3}
+  Name: "\u0411\u0430\u0431\u0430 \u044F\u0433\u0430"
+  prefab: {fileID: 2057604324047841907, guid: 13206c31317e7d449a629de763a8b991, type: 3}
   health: 100
   basicDamage: 5
-  spechialDamage: 10
-  ultDamage: 15
-  Icon: {fileID: 223128343190330288, guid: b95d0273a4877124da224d31170b8a81, type: 3}
-  stunTime: 2
+  spechialDamage: 5
+  ultDamage: 5
+  Icon: {fileID: 9004868193778973664, guid: 9f74be525f4447148a20dc54596ae942, type: 3}
+  stunTime: 4

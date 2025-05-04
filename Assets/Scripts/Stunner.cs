@@ -7,9 +7,9 @@ public class Stunner : NetworkBehaviour
     [SerializeField] GameObject birdsPrefab;
     [SerializeField] bool disableOnStrike = true;
     [SerializeField] ParticleSystem particles;
-    [SerializeField] float stunTime = 2;
     SpriteRenderer spriter;
     Rigidbody2D rb;
+    public float stunTime = 2;
     public int Damage = 0;
     private void Start()
     {

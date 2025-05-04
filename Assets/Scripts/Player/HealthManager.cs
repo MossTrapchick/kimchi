@@ -55,7 +55,7 @@ public class HealthManager : NetworkBehaviour
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0;
             GetComponent<Collider2D>().enabled = false;
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(5);
             if (IsOwner) GameManager.OnGameOver.Invoke(false);
             else GameManager.OnGameOver.Invoke(true);
         }

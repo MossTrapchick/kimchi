@@ -1,16 +1,19 @@
 using TMPro;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class GameManager : NetworkBehaviour
 {
-    [SerializeField] Slider MyHealth, EnemyHealth;
-    [SerializeField] Image MyImage, EnemyImage;
-    [SerializeField] TMP_Text MyName, EnemyName;
+    [SerializeField] GameObject GameOverWindow;
+    [SerializeField] Slider LeftHealth, RightHealth;
+    [SerializeField] Image LeftImage, RightImage;
+    [SerializeField] TMP_Text LeftName, RightName;
     [SerializeField] Image AttackUI;
 
     [SerializeField] Transform player_1, player_2;
+    public static UnityEvent<bool> OnGameOver = new();
     Character[] Characters;
     public Character MyCharacter(ulong id) => 
         Characters[LobbyOrchestrator.PlayersInCurrentLobby.Find(player => player.id == id).CharacterId];
@@ -19,19 +22,20 @@ public class GameManager : NetworkBehaviour
 
     private bool isSpawnFirst=false;
     public Image GetAttackUI => AttackUI;
-    public Slider GetSlider(ulong id) => NetworkManager.LocalClientId == id ? MyHealth : EnemyHealth;
+    public Slider GetSlider(ulong id) => LobbyOrchestrator.PlayersInCurrentLobby[0].id==id ? LeftHealth : RightHealth;
 
     private void Awake()
     {
         Instance = this;
         Characters = Resources.LoadAll<Character>("Characters");
+        OnGameOver.AddListener(GameOver);
     }
     private void Start()
     {
-        MyImage.sprite = Characters[LobbyOrchestrator.PlayersInCurrentLobby[IsServer ? 0 : 1].CharacterId].Icon;
-        EnemyImage.sprite = Characters[LobbyOrchestrator.PlayersInCurrentLobby[IsServer ? 1 : 0].CharacterId].Icon;
-        MyName.text = LobbyOrchestrator.PlayersInCurrentLobby[IsServer ? 0 : 1].Name;
-        EnemyName.text = LobbyOrchestrator.PlayersInCurrentLobby[IsServer ? 1 : 0].Name;
+        LeftImage.sprite = Characters[LobbyOrchestrator.PlayersInCurrentLobby[0].CharacterId].Icon;
+        RightImage.sprite = Characters[LobbyOrchestrator.PlayersInCurrentLobby[1].CharacterId].Icon;
+        LeftName.text = LobbyOrchestrator.PlayersInCurrentLobby[0].Name;
+        RightName.text = LobbyOrchestrator.PlayersInCurrentLobby[1].Name;
         SpawnRpc(NetworkManager.LocalClientId);
     }
 
@@ -42,5 +46,9 @@ public class GameManager : NetworkBehaviour
         inst.GetComponent<NetworkObject>().SpawnWithOwnership(id);
         isSpawnFirst = true;
     }
-
+    void GameOver(bool isWin)
+    {
+        InputManager.Input.Disable();
+        GameOverWindow.SetActive(true);
+    }
 }

@@ -12,6 +12,7 @@ public class HealthManager : NetworkBehaviour
     private void Start()
     {
         healthSlider = GameManager.Instance.GetSlider(OwnerClientId);
+        if (IsOwner) healthSlider.transform.GetChild(0).GetComponent<Image>().color = Color.green;
         character = GameManager.Instance.MyCharacter(OwnerClientId);
         curentHealth = character.health;
         healthSlider.maxValue = character.health;
@@ -26,5 +27,16 @@ public class HealthManager : NetworkBehaviour
         if (id != OwnerClientId) return;
         curentHealth -= damage;
         healthSlider.value = curentHealth;
+        if (curentHealth <= 0) StartCoroutine(Death());
+    }
+    IEnumerator Death()
+    {
+        if (IsOwner) InputManager.Input.Disable();
+        GetComponent<Rigidbody2D>().gravityScale = 0;
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<Animator>().SetTrigger("Death");
+        yield return new WaitForSeconds(10);
+        if (IsOwner) GameManager.OnGameOver.Invoke(false);
+        else GameManager.OnGameOver.Invoke(true);
     }
 }

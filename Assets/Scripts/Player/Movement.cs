@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Cinemachine;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,6 +15,8 @@ public class Movement : NetworkBehaviour
     void Start()
     {
         if (!IsOwner) return;
+        if (transform.position.x > 0) DirRpc(-1, OwnerClientId);
+        FindFirstObjectByType<CinemachineCamera>().Target.TrackingTarget = transform;
         rb = GetComponent<Rigidbody2D>();
         InputManager.Input.Player.Move.performed += ChangeDirection;
         InputManager.Input.Player.Jump.performed += startJumpWithBuffer;

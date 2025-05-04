@@ -63,7 +63,7 @@ public class Attack : NetworkBehaviour
         while(t < AttackCooldown)
         {
             t+= Time.deltaTime;
-            CooldownUI.fillAmount = Mathf.InverseLerp(0, AttackCooldown, t);
+            CooldownUI.fillAmount = 1 - Mathf.InverseLerp(0, AttackCooldown, t);
             yield return new WaitForEndOfFrame();
         }
         Cooldown = default;

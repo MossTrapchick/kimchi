@@ -11,7 +11,7 @@ public class GameManager : NetworkBehaviour
     [SerializeField] Slider LeftHealth, RightHealth;
     [SerializeField] Image LeftImage, RightImage;
     [SerializeField] TMP_Text LeftName, RightName;
-    [SerializeField] Image AttackUI;
+    [SerializeField] Image AttackUI, UltUI;
 
     [SerializeField] Transform player_1, player_2;
     public static UnityEvent<bool> OnGameOver = new();
@@ -23,6 +23,7 @@ public class GameManager : NetworkBehaviour
 
     private bool isSpawnFirst=false;
     public Image GetAttackUI => AttackUI;
+    public Image GetUltUI => UltUI;
     public Slider GetSlider(ulong id) => LobbyOrchestrator.PlayersInCurrentLobby[0].id==id ? LeftHealth : RightHealth;
 
     private void Awake()

@@ -12,6 +12,20 @@ public class Movement : NetworkBehaviour
     [SerializeField] Animator anim;
     private bool isGrounded = false, IsJumping = false;
     Rigidbody2D rb;
+    Coroutine stunCor;
+    public void Stun(float time, ulong id)
+    {
+        if (stunCor != default) StopCoroutine(stunCor);
+        stunCor = StartCoroutine(stun(time));
+    }
+    IEnumerator stun(float time)
+    {
+        anim.SetBool("IsStaned", true);
+        if (IsOwner) InputManager.Input.Disable();
+        yield return new WaitForSeconds(time);
+        anim.SetBool("IsStaned", false);
+        if (IsOwner) InputManager.Input.Enable(); //if ! game over
+    }
     void Start()
     {
         if (!IsOwner) return;
